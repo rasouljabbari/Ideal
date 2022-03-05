@@ -1,0 +1,38 @@
+:root {
+    --main-red: #A60509;
+}
+
+@font-face {
+    font-family: iranyekan;
+    src: url(../../assets/fonts/iran-yekan/ttf/iranyekanwebregularfanum.ttf) format("ttf"), url(../../assets/fonts/iran-yekan/woff/iranyekanwebregularfanum.woff) format("woff"), url(../../assets/fonts/iran-yekan/eot/iranyekanwebregularfanum.eot) format("eot")
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px !important;
+    font-family: iranyekan !important;
+    overflow-x: hidden;
+    text-align: right;
+    direction: rtl;
+    width: 100vw
+}
+
+p {
+    line-height: 4.5vh
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: iranyekan !important
+}
+
+a {
+    text-decoration: none !important
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none !important
+}
