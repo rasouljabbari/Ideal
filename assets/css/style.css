@@ -2,12 +2,38 @@
     --main-red: #A60509;
 }
 
+/*YekanBakhBold*/
 @font-face {
-    font-family: iranyekan;
+    font-family: YekanBakhBold;
+    src: url(../fonts/IranYekan/YekanBakhBold.eot) format("eot"),
+    url(../fonts/IranYekan/YekanBakhBold.woff) format("woff"),
+    url(../fonts/IranYekan/YekanBakhBold.ttf) format("ttf")
+}
+
+/*YekanBakhLight*/
+@font-face {
+    font-family: YekanBakhLight;
+    src: url(../fonts/IranYekan/YekanBakhLight.eot) format("eot"),
+    url(../fonts/IranYekan/YekanBakhLight.woff) format("woff"),
+    url(../fonts/IranYekan/YekanBakhLight.ttf) format("ttf")
+}
+
+/*YekanBakhMedium*/
+@font-face {
+    font-family: YekanBakhMedium;
+    src: url(../fonts/IranYekan/YekanBakhMedium.eot) format("eot"),
+    url(../fonts/IranYekan/YekanBakhMedium.woff) format("woff"),
+    url(../fonts/IranYekan/YekanBakhMedium.ttf) format("ttf")
+}
+
+/*YekanBakhRegular*/
+@font-face {
+    font-family: YekanBakhRegular;
     src: url(../fonts/IranYekan/YekanBakhRegular.eot) format("eot"),
     url(../fonts/IranYekan/YekanBakhRegular.woff) format("woff"),
     url(../fonts/IranYekan/YekanBakhRegular.ttf) format("ttf")
 }
+
 
 body {
     margin: 0;
