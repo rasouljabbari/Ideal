@@ -4,9 +4,9 @@
 
 @font-face {
     font-family: iranyekan;
-    src: url(../../assets/fonts/iran-yekan/ttf/iranyekanwebregularfanum.ttf)
-    format("ttf"), url(../../assets/fonts/iran-yekan/woff/iranyekanwebregularfanum.woff)
-    format("woff"), url(../../assets/fonts/iran-yekan/eot/iranyekanwebregularfanum.eot) format("eot")
+    src: url(../fonts/IranYekan/YekanBakhRegular.eot) format("eot"),
+    url(../fonts/IranYekan/YekanBakhRegular.woff) format("woff"),
+    url(../fonts/IranYekan/YekanBakhRegular.ttf) format("ttf")
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
     text-align: right;
     direction: rtl;
-    width: 100vw
+    width: 100vw;
 }
 
 p {
