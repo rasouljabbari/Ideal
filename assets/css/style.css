@@ -4,7 +4,9 @@
 
 @font-face {
     font-family: iranyekan;
-    src: url(../../assets/fonts/iran-yekan/ttf/iranyekanwebregularfanum.ttf) format("ttf"), url(../../assets/fonts/iran-yekan/woff/iranyekanwebregularfanum.woff) format("woff"), url(../../assets/fonts/iran-yekan/eot/iranyekanwebregularfanum.eot) format("eot")
+    src: url(../../assets/fonts/iran-yekan/ttf/iranyekanwebregularfanum.ttf)
+    format("ttf"), url(../../assets/fonts/iran-yekan/woff/iranyekanwebregularfanum.woff)
+    format("woff"), url(../../assets/fonts/iran-yekan/eot/iranyekanwebregularfanum.eot) format("eot")
 }
 
 body {
