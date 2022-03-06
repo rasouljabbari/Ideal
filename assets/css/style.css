@@ -1,5 +1,7 @@
 :root {
     --main-red: #A60509;
+    --custom-gray: #F4F5F7;
+    --custom-orange: #E89F71;
 }
 
 /*YekanBakhBold*/
@@ -69,6 +71,7 @@ input:focus, button:focus, textarea:focus {
 /*style-property*/
 .dv-section-property{
     padding: 100px 0 100px 0;
+    position: relative;
 }
 .dv-Property{
     margin-bottom: 1em;
@@ -194,4 +197,78 @@ margin-bottom: 0!important;
     text-align: center;
     width: 100%;
     z-index: 5;
+}
+
+
+/*cart*/
+.dv-product{
+    color: #8A8FB9;
+    font-size: 14px;
+    line-height: 19px;
+}
+.dv-Product-filters{
+    background-color: var(--custom-orange);
+}
+.dv-product-archive{
+    background-color: #FCF8F3;
+    padding: 100px 0 100px 0;
+}
+
+.dv-Circle-Purple , .dv-Circle-pink , .dv-Circle-orange {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.dv-Circle-Purple{
+    background-color: #8568FF;
+}
+.dv-Circle-pink{
+    background-color: #EC42A2;
+}
+.dv-Circle-orange{
+    background-color: #DE9034;
+}
+.dv-image-cart{
+    background-color: var(--custom-gray);
+    display: flex;
+    justify-content: center;
+    padding: 50px 39px 29px 30px;
+}
+.dv-image-cart img{
+    width: 201px;
+    height: 201px;
+}
+.dv-card-cart{
+    border: none;
+
+}
+.dv-card-title{
+    color: #151875;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: iranYekanBold;
+}
+.dv-original-price{
+    color: #E89F71;
+    font-size: 14px;
+    line-height: 19px;
+}
+.discounted-price{
+    font-size: 14px;
+    line-height: 19px;
+    color: #212121;
+}
+.dv-cart-section{
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*footer*/
+.concat-footer{
+    border-top: 1px solid #D8D8D8;
+    margin: 100px 0;
 }
