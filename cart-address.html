@@ -3,11 +3,12 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>مبل ایده آل | سبد خرید</title>
+    <title>مبل ایده آل | افزودن آدرس تحویل</title>
     <link rel="shortcut icon" href="assets/images/doraaal.ico" type="image/x-icon">
     <!--    Logo with ico format-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/icomoon.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/rj-style.css">
 </head>
@@ -86,132 +87,122 @@
     <div class="dv-two-color-orange"></div>
     <div class="dv-content-on-two-color">
         <div class="container">
-            <div class="row">
+            <form class="row g-4">
                 <div class="col-12">
-                    <h2 class="mb-4">سبد خرید</h2>
-
-                    <div class="dv-cart-product-content h-auto mb-5">
-                        <table class="dv-cart-product-table w-100">
-                            <thead>
-                            <tr>
-                                <th></th>
-                                <th>نام محصول</th>
-                                <th>قیمت هر عدد</th>
-                                <th>تعداد</th>
-                                <th>قیمت کل</th>
-                                <th>حذف</th>
-                            </tr>
-                            </thead>
-
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <a href="product-info.html" target="_blank">
-                                        <div class="dv-cart-product-img">
-                                            <img src="assets/images/cart-image1.png" class="img-cover"
-                                                 alt="عکس محصول سبد خرید">
-                                        </div>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="product-info.html" target="_blank">
-                                        <h2 class="dv-product-table-title">صندلی میز تحریر مدل ETW</h2>
-                                    </a>
-                                </td>
-                                <td>
-                                    <span class="dv-card-price dv-cart-product-price">53000 تومان</span>
-                                </td>
-                                <td>
-                                    <div class="dv-product-count">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <span class="dv-product-count-icon dv-product-count-plus">+</span>
-                                            <span class="dv-product-count-number">2</span>
-                                            <span class="dv-product-count-icon dv-product-count-minus">-</span>
-                                        </div>
+                    <h2>سبد خرید / <span class="dv-cart-address-title">آدرس تحویل</span></h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="dv-cart-product-content h-auto">
+                        <div class="row g-4 dv-cart-form">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <span class="icon-user-light dv-address-icon"></span>
+                                    <div class="d-flex flex-column me-3">
+                                        <span class="dv-user-name-title mt-1 mb-3">نام و نام خانوادگی</span>
+                                        <span class="dv-user-name-title fw-bold">رسول جباری</span>
                                     </div>
-                                </td>
-                                <td>
-                                    <span class="dv-card-price dv-cart-product-price">5300000 تومان</span>
-                                </td>
-
-                                <td>
-                                    <span class="icon-trash dv-cart-trash-icon"></span>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="product-info.html" target="_blank">
-                                        <div class="dv-cart-product-img">
-                                            <img src="assets/images/cart-image2.png" class="img-cover"
-                                                 alt="عکس محصول سبد خرید">
-                                        </div>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="product-info.html" target="_blank">
-                                        <h2 class="dv-product-table-title">صندلی میز تحریر مدل ETW</h2>
-                                    </a>
-                                </td>
-                                <td>
-                                    <span class="dv-card-price dv-cart-product-price">53000 تومان</span>
-                                </td>
-                                <td>
-                                    <div class="dv-product-count">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <span class="dv-product-count-icon dv-product-count-plus">+</span>
-                                            <span class="dv-product-count-number">2</span>
-                                            <span class="dv-product-count-icon dv-product-count-minus">-</span>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <span class="icon-phone-light dv-address-icon"></span>
+                                    <div class="d-flex flex-column me-3">
+                                        <span class="dv-user-name-title mt-1 mb-3">شماره تماس</span>
+                                        <span class="dv-user-name-title fw-bold">09106878810</span>
                                     </div>
-                                </td>
-                                <td>
-                                    <span class="dv-card-price dv-cart-product-price">5300000 تومان</span>
-                                </td>
-
-                                <td>
-                                    <span class="icon-trash dv-cart-trash-icon"></span>
-                                </td>
-
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="dv-cart-product-content h-auto mb-4 d-flex align-items-center align-items-md-end">
-                        <table class="dv-cart-product-table dv-cart-price-table">
-                            <thead>
-                            <tr>
-                                <th>هزینه کل محصولات</th>
-                                <th>هزینه ارسال</th>
-                                <th>هزینه کل قابل پرداخت</th>
-                            </tr>
-                            </thead>
-
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <span class="dv-card-price dv-cart-product-price">53000 تومان</span>
-                                </td>
-                                <td>
-                                    <span class="dv-cart-product-price">بعد از ثبت آدرس محاسبه می شود</span>
-                                </td>
-                                <td>
-                                    <span class="dv-card-price dv-cart-product-price">5300000 تومان</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <div class="dv-cart-price-button me-auto">
-                            <a href="cart-address-information.html" class="dv-pay-button">پرداخت</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <span class="icon-location-light dv-address-icon"></span>
+                                    <div class="d-flex flex-column me-3">
+                                        <span class="dv-user-name-title mt-1 mb-3">آدرس</span>
+                                        <span class="dv-user-name-title fw-bold">آذربایجان شرقی، تبریز، کوی فیروز، پلاک 555</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <span class="icon-mail-light dv-address-icon"></span>
+                                    <div class="d-flex flex-column me-3">
+                                        <span class="dv-user-name-title mt-1 mb-3">آدرس ایمیل</span>
+                                        <span class="dv-user-name-title fw-bold">rjdeveloper17@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex align-items-center justify-content-start">
+                                <a href="cart-address-information.html">
+                                    <span class="icon-edit-light dv-address-icon ps-3"></span>
+                                    <span class="dv-user-name-title">ویرایش اطلاعات آدرس</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="my-5">
-                        <a href="products.html" target="_blank" class="dv-show-more-products">مشاهده محصولات بیشتر</a>
+                <div class="col-lg-4">
+                    <div class="dv-cart-product-content d-flex flex-column justify-content-between">
+                        <div class="w-100 mb-5">
+                            <div class="d-flex align-items-center mb-4">
+
+                                <a href="product-info.html" target="_blank">
+                                    <div class="dv-cart-left-content-image position-relative">
+                                        <img src="assets/images/cart-image1.png" class="img-cover" alt="عکس محصول">
+                                        <span class="dv-custom-badge rounded-circle position-absolute d-flex align-items-center justify-content-center">2</span>
+                                    </div>
+                                </a>
+
+                                <div class="d-flex flex-column justify-content-center dv-left-content-after-image">
+                                    <a href="product-info.html" target="_blank">
+                                        <h2 class="dv-product-table-title">صندلی میز تحریر مدل ETW</h2>
+                                    </a>
+                                    <span class="pe-2 dv-card-price dv-cart-product-price">53000 تومان</span>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex align-items-center mb-4">
+
+                                <a href="product-info.html" target="_blank">
+                                    <div class="dv-cart-left-content-image position-relative">
+                                        <img src="assets/images/cart-image2.png" class="img-cover" alt="عکس محصول">
+                                        <span class="dv-custom-badge rounded-circle position-absolute d-flex align-items-center justify-content-center">2</span>
+                                    </div>
+                                </a>
+
+                                <div class="d-flex flex-column justify-content-center dv-left-content-after-image">
+                                    <a href="product-info.html" target="_blank">
+                                        <h2 class="dv-product-table-title">صندلی میز تحریر مدل ETW</h2>
+                                    </a>
+                                    <span class="pe-2 dv-card-price dv-cart-product-price">53000 تومان</span>
+                                </div>
+
+                            </div>
+
+                            <hr class="dv-custom-hr">
+
+                            <div class="w-100 d-flex align-items-center justify-content-between mb-4">
+                                <span class="dv-factor-title fw-bold">هزینه کل محصولات</span>
+                                <span class="dv-cart-product-price"><span class="fw-bold dv-card-price">21200000</span> تومان</span>
+                            </div>
+
+                            <div class="w-100 d-flex align-items-center justify-content-between">
+                                <span class="dv-factor-title fw-bold">هزینه ارسال</span>
+                                <span class="dv-cart-product-price">بعد از ثبت آدرس محاسبه می شود</span>
+                            </div>
+
+                            <hr class="dv-custom-hr">
+
+                            <div class="w-100 d-flex align-items-center justify-content-between mb-4">
+                                <span class="dv-factor-title fw-bold">هزینه کل قابل پرداخت</span>
+                                <span class="dv-cart-product-price"><span class="fw-bold dv-card-price">21200000</span> تومان</span>
+                            </div>
+
+                        </div>
+                        <button type="submit" class="dv-pay-button mx-auto">پرداخت</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </main>
@@ -324,6 +315,19 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
 <script src="assets/js/index.js"></script>
+
+<script>
+    $(".province-select").select2({
+        placeholder: "استان محل سکونت خود را انتخاب کنید",
+        allowClear: true
+    });
+
+    $(".city-select").select2({
+        placeholder: "شهر محل سکونت خود را انتخاب کنید",
+        allowClear: true
+    });
+</script>
 </body>
 </html>
