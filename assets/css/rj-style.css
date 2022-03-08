@@ -34,6 +34,10 @@ ul {
     padding-right: 0;
 }
 
+button, a {
+    transition: all 0.3s linear;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -172,7 +176,7 @@ ul {
     color: #262F56;
 }
 
-.dv-two-color-orange {
+.dv-two-color-orange, .dv-two-color-orange2 {
     width: 100%;
     height: 490px;
     position: absolute;
@@ -180,6 +184,10 @@ ul {
     left: 0;
     background: rgb(252, 248, 243);
     background: linear-gradient(90deg, rgba(252, 248, 243, 1) 32%, rgba(249, 241, 231, 1) 32%);
+}
+
+.dv-two-color-orange2 {
+    height: 700px;
 }
 
 .rj-header-icon:first-child {
@@ -448,6 +456,10 @@ button:hover, a:hover {
     transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
+}
+
+.dv-footer-social-media:hover{
+    transform: translateY(-5px);
 }
 
 .dv-footer-location-icon {
@@ -744,13 +756,14 @@ button:hover, a:hover {
     transform: translateY(-50%);
 }
 
-.dv-cart-left-content-image{
+.dv-cart-left-content-image {
     width: 100px;
     height: 100px;
     background-color: #f8f8f8;
     border-radius: 10px;
 }
-.dv-custom-badge{
+
+.dv-custom-badge {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -762,31 +775,162 @@ button:hover, a:hover {
     background: #36425C;
 }
 
-.dv-left-content-after-image{
+.dv-left-content-after-image {
     width: calc(100% - 110px);
 }
 
-.dv-custom-hr{
+.dv-custom-hr {
     color: var(--dark-orange);
     margin: 2em 0;
 }
-.dv-factor-title , .dv-cart-product-price{
+
+.dv-factor-title, .dv-cart-product-price {
     font-size: 16px;
     line-height: 28px;
     color: var(--dark-blue);
 }
 
-.dv-address-icon:before{
+.dv-address-icon:before {
     font-size: 24px;
     color: var(--dark-orange);
 }
 
-.dv-user-name-title{
+.dv-user-name-title {
     font-size: 14px;
     line-height: 24px;
     color: var(--dark-blue);
 }
+
 /************************ END Cart ***********************/
+
+.dv-contact-us-description {
+    line-height: 28px;
+    color: var(--dark-blue);
+    width: 75%;
+}
+
+.dv-information-content {
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 16px 24px;
+    width: 100%;
+    min-height: 115px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.dv-contact-us-information-image {
+    height: 500px;
+    margin-top: 1em;
+    margin-bottom: 80px;
+}
+
+#contact_location {
+    height: 374px;
+}
+
+.dv-form-submit-content {
+    background-color: #F9F1E7;
+    width: 100%;
+    padding: 80px 0;
+    margin: 80px 0;
+}
+
+.dv-contact-us-form {
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 50px 80px;
+}
+
+.dv-about-us-submit-btn {
+    width: 141px;
+    height: 50px;
+    border: none;
+    background: #E89F71;
+    color: #fff;
+    line-height: 28px;
+    border-radius: 5px;
+    margin-right: auto;
+}
+
+.dv-custom-contact-us-tab .nav-item.show .nav-link,
+.nav-tabs .nav-link.active, .dv-custom-contact-us-tab .nav-link:hover {
+    background: var(--dark-orange);
+    border: 2px solid var(--dark-orange);
+    color: #fff;
+}
+
+.dv-custom-contact-us-tab .nav-link {
+    border: 2px solid var(--dark-orange);
+    line-height: 28px;
+    text-align: center;
+    color: #524E4E;
+    width: 180px;
+    height: 60px;
+    margin: 0 1.5em;
+    transition: all 0.3s linear;
+}
+
+.dv-custom-contact-us-tab-content .accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+    font-family: icomoon;
+    content: "\e901";
+    color: var(--dark-orange);
+    font-size: 1.5em;
+    background-image: none;
+    background-repeat: unset;
+    background-size: unset;
+    transition: transform .2s ease-in-out;
+    padding-right: 1em;
+}
+
+.dv-custom-contact-us-tab-content .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: unset;
+    font-family: icomoon;
+    content: "\e900";
+    color: var(--dark-orange);
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+
+.accordion-item {
+    border: 1px solid var(--dark-orange);
+    padding: 30px 0;
+}
+
+.dv-custom-contact-us-tab-content .accordion-button:not(.collapsed) {
+    color: var(--dark-blue);
+    font-weight: bold;
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.dv-custom-contact-us-tab-content .accordion-button {
+    text-align: right;
+}
+
+.dv-custom-contact-us-tab-content .accordion-button:focus {
+    background-color: unset;
+    box-shadow: unset;
+    border-color: unset;
+}
+
+.dv-custom-contact-us-tab-content .accordion-body {
+    width: 90%;
+}
+
+.dv-custom-contact-us-tab-content .accordion-body p {
+    line-height: 25px;
+}
+
+/************************ END Contact us ***********************/
 
 
 /************************ Media Query ***********************/
@@ -837,6 +981,12 @@ button:hover, a:hover {
 }
 
 @media (max-width: 992px) {
+    .dv-custom-contact-us-tab .nav-link {
+        width: 120px;
+        height: 40px;
+        margin: 0 1em;
+    }
+
     .dv-blog-info-tail-images {
         height: 230px;
         margin-bottom: 1em;
@@ -864,6 +1014,28 @@ button:hover, a:hover {
 
 @media (max-width: 768px) {
 
+    .dv-contact-us-information-image {
+        margin-bottom: 40px;
+    }
+
+    .accordion-item {
+        padding: 20px 0;
+    }
+
+    .dv-custom-contact-us-tab-content {
+        margin: 40px 0;
+    }
+
+    .dv-custom-contact-us-tab .nav-link {
+        width: 120px;
+        height: 40px;
+        margin: 0.5em;
+    }
+
+    .dv-contact-us-description {
+        width: 100%;
+    }
+
     .dv-cart-price-button {
         margin-right: 2em !important;
     }
@@ -879,7 +1051,31 @@ button:hover, a:hover {
 }
 
 @media (max-width: 576px) {
-    .container{
+
+    .accordion-item {
+        padding: 10px 0;
+    }
+
+    .dv-contact-us-form {
+        padding: 20px;
+    }
+
+    .dv-contact-us-description {
+        text-align: justify;
+    }
+
+    .dv-form-submit-content {
+        padding: 40px 0;
+        margin: 40px 0;
+    }
+
+    .dv-contact-us-information-image {
+        height: 450px;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
+    .container {
         padding: 0 15px !important;
     }
 
@@ -910,19 +1106,23 @@ button:hover, a:hover {
 
 @media (min-width: 1480px) {
 
+    .dv-contact-us-information-image {
+        height: 548px;
+    }
+
     .dv-cart-product-table tr th, .dv-cart-price-table tr td {
         min-width: 195px;
     }
 
     /*font-size : 16px*/
-    .dv-footer-links-list-link , .dv-custom-badge , .dv-user-name-title {
+    .dv-footer-links-list-link, .dv-custom-badge, .dv-user-name-title {
         font-size: 16px;
     }
 
     /*font-size : 18px*/
     p, .rj-footer-email-input, .dv-footer-location-text,
-    .dv-cart-form-label-input, .dv-cart-from-label-span ,
-    .dv-factor-title , .dv-cart-product-price{
+    .dv-cart-form-label-input, .dv-cart-from-label-span,
+    .dv-factor-title, .dv-cart-product-price {
         font-size: 18px;
         line-height: 28px;
     }
@@ -946,8 +1146,25 @@ button:hover, a:hover {
 }
 
 @media (min-width: 767px) {
+
+    .dv-custom-contact-us-tab-content {
+        margin: 80px 0;
+    }
+
+    .dv-information-content {
+        width: 355px;
+    }
+
+    .dv-information-content:nth-child(even) {
+        margin-right: 4em;
+    }
+
     .rj-header-form {
         min-width: 380px;
+    }
+
+    .dv-contact-us-information-image {
+        margin-top: 5em;
     }
 }
 
