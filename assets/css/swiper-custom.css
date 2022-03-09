@@ -1,0 +1,188 @@
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.swiper-slide {
+    width: 60%;
+}
+
+/*custom slider banner*/
+.dv-banner-swiper {
+    position: relative;
+    top: 0;
+    padding-top: 220px;
+    background: rgb(252, 248, 243);
+    background: linear-gradient(90deg, rgba(252, 248, 243, 1) 32%, rgba(249, 241, 231, 1) 32%);
+    z-index: 0;
+}
+.dv-banner-swiper .swiper-wrapper{
+    height: 600px;
+}
+
+.dv-top-swiper-items{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 1;
+}
+.dv-banner-swiper.swiper-horizontal > .swiper-pagination-bullets,
+.dv-banner-swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.dv-banner-swiper .swiper-pagination-custom, .dv-banner-swiper .swiper-pagination-fraction {
+    left: 0;
+    top: 170px;
+    height: 40px;
+}
+
+.dv-banner-swiper .swiper-pagination-bullet,
+.dv-slider-similar-products .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #D8D8D8;
+    opacity: 1;
+    margin: 4px 8px !important;
+}
+
+.dv-banner-swiper .swiper-pagination-bullet-active,
+.dv-slider-similar-products .swiper-pagination-bullet-active{
+    background: var(--custom-orange);
+    border: 3px solid #fff;
+    outline: 1px solid var(--custom-orange);
+    width: 15px;
+    height: 15px;
+    margin: 3px 8px !important;
+}
+
+.dv-banner-swiper .swiper-button-prev, .dv-banner-swiper.swiper-rtl .swiper-button-next{
+    top: 170px;
+    display: flex !important;
+    color: #FFFFFF;
+    background-color: var(--custom-orange);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.dv-banner-swiper .swiper-button-prev:after, .dv-banner-swiper.swiper-rtl .swiper-button-next:after{
+    font-size: 1em;
+}
+
+.dv-banner-swiper .swiper-button-prev{
+    left: 5%;
+    right: auto;
+}
+
+.dv-banner-swiper.swiper-rtl .swiper-button-next{
+    left: 0;
+}
+
+/*custom slider */
+.dv-slider-best-selling-products {
+    height: min-content;
+}
+
+
+.dv-slider-news-products .swiper-pagination-bullet {
+    background: #E89F71;
+    width: 11px;
+    height: 11px
+}
+
+.dv-slider-news-products {
+    padding-bottom: 60px;
+}
+
+/*swiper product*/
+.dv-swiper-product-2 .swiper-slide, .dv-swiper-product-2 .swiper-slide {
+    height: 502px !important;
+}
+
+.dv-swiper-product .swiper-slide, .dv-swiper-product .swiper-slide img {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.dv-swiper-product .swiper-wrapper {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+
+
+.dv-custom-swiper-btn-product div {
+    display: flex !important;
+    color: #FFFFFF;
+    background-color: var(--custom-orange);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    /*flex-direction: row-reverse!important;*/
+}
+
+.dv-custom-swiper-btn-product div:after {
+    font-size: 1em !important;
+}
+
+/****************************/
+
+@media (max-width: 1200px) {
+    .dv-banner-swiper .swiper-button-prev{
+        left: 7%;
+    }
+}
+
+@media (max-width: 992px) {
+    .dv-banner-swiper .swiper-button-prev{
+        left: 8%;
+    }
+}
+
+@media (max-width: 768px) {
+    .dv-banner-swiper .swiper-button-prev{
+        left: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    .dv-banner-swiper .swiper-button-prev{
+        left: 14%;
+    }
+    .dv-banner-swiper.swiper-rtl .swiper-button-next{
+        left: 2%;
+    }
+}
+
+
+

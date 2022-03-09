@@ -3,42 +3,459 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>products</title>
+    <title>مبل ایده آل | محصولات</title>
     <link rel="shortcut icon" href="assets/images/doraaal.ico" type="image/x-icon">
     <!--    Logo with ico format-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/icomoon.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/dv-style.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
 <!--header-->
-<!---->
 <header>
-</header>
-
-<!--section-body-->
-
-
-<main>
-    <section>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light dv-custom-navbar">
         <div class="container">
-            <div class="row">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="product-specifications-tab" data-bs-toggle="pill" data-bs-target="#product-specifications" type="button" role="tab" aria-controls="product-specifications" aria-selected="true">مشخصات محصول</button>
+            <a class="navbar-brand" href="#">Ideal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav dv-right-menu align-items-xl-center ms-auto pe-0 mb-3 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Sofa" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            مبل
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="Sofa">
+                            <li><a class="dropdown-item" href="#">مبل یک</a></li>
+                            <li><a class="dropdown-item" href="#">مبل دو</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="description-tab" data-bs-toggle="pill" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="false">توضیحات</button>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="bedSet" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            سرویس خواب
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="bedSet">
+                            <li><a class="dropdown-item" href="#">سرویس خواب یک</a></li>
+                            <li><a class="dropdown-item" href="#">سرویس خواب دو</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="user-comments-tab" data-bs-toggle="pill" data-bs-target="#user-comments" type="button" role="tab" aria-controls="user-comments" aria-selected="false">نظرات کاربران</button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ارتباط با ما</a>
                     </li>
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="product-specifications" role="tabpanel" aria-labelledby="product-specifications-tab">...</div>
-                    <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">...</div>
-                    <div class="tab-pane fade" id="user-comments" role="tabpanel" aria-labelledby="user-comments-tab">...</div>
+                <div class="d-flex flex-column flex-sm-row align-items-sm-center">
+                    <form class="d-flex dv-header-form mb-3 mb-sm-0">
+                        <button type="submit">
+                            <span class="icon-Icon---Search"></span>
+                        </button>
+                        <input class="form-control" type="search" name="search" placeholder="جستجو" aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav flex-row align-items-center">
+                        <li class="nav-item dropdown dv-user-dropdown me-3">
+                            <a class="nav-link dropdown-toggle dv-user-image-link" href="#" id="userImage" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/images/user.png" class="img-cover" alt="مبل ایده آل">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="userImage">
+                                <li><a class="dropdown-item" href="#">حساب کاربری</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dv-header-icon ms-4">
+                            <a class="nav-link" href="cart.html">
+                                <span class="icon-Icon---Cart"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item dv-header-icon">
+                            <a class="nav-link" href="interest.html">
+                                <span class="icon-Icon---Heart"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!---->
+
+<main>
+    <div class="dv-blog-info-top-bg-color"></div>
+    <section id="blogInfo">
+        <div class="container pb-5">
+            <div class="d-flex justify-content-start">
+                <h2 class="dv-h-product-archive">ارشیو محصولات</h2>
+            </div>
+            <div class="d-flex justify-content-between flex-wrap">
+                <span class="dv-product"><span class="ps-3">1600</span> محصول</span>
+                <button class="btn dv-Product-filters">
+                    <span>i</span>
+                    <span>فیلتر محصولات</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="pt-5 pt-sm-0">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product-info.html">
+                        <div class="card dv-card-cart">
+                            <div class="dv-image-cart">
+                                <img src="assets/images/chair3-min.png" class="img-fluid" alt="ideal">
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="card-title dv-card-title">مبل راحتی مدل45</h2>
+                                <div class="d-flex justify-content-center mb-3 mt-1">
+                                    <span class="dv-Circle-Purple"></span>
+                                    <span class="dv-Circle-pink"></span>
+                                    <span class="dv-Circle-orange"></span>
+                                </div>
+                                <span class="ps-2 dv-original-price"> <del>تومان <span
+                                        class="">500.000</span></del></span>
+                                <span class="pe-2 discounted-price">تومان <span class="">260.000</span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--                pagination-->
+                <div class="col-12 d-flex justify-content-center">
+                    <nav aria-label="Page navigation" class="dv-custom-pagination">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link dv-previous-link dv-rotate-previous-link" href="#"
+                                   aria-label="Previous">
+                                    <span class="icon-doble-left-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link dv-previous-link" href="#" aria-label="Previous">
+                                    <span class="icon-arrow-right"></span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link dv-next-page-link" href="#" aria-label="Next">
+                                    <span class="icon-arrow-left"></span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link dv-next-page-link" href="#" aria-label="Next">
+                                    <span class="icon-doble-left-arrow"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -46,8 +463,114 @@
 </main>
 
 <!--section-footer-->
+<!--section-footer-->
 <footer id="footer">
+    <div class="container mt-3">
+        <div class="dv-footer-content pb-5">
+            <div class="row g-4 mt-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex justify-content-between">
+                        <ul class="dv-footer-links-list">
+                            <li class="dv-footer-links-list-item-title mb-3">
+                                <a href="index.html">
+                                    <span class="fw-bold">Ideal</span>
+                                </a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">محصولات</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">تخفیفات</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">مبلمان</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">سرویس خواب</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">دکوراتیو</a>
+                            </li>
+                        </ul>
+                        <ul class="dv-footer-links-list">
+                            <li class="dv-footer-links-list-item-title mb-3">
+                                <span>لینک های مهم</span>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">تماس با ما</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">درباره ما</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">سبد خرید</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">وبلاگ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex flex-column align-items-center">
+                    <div class="dv-footer-links-list-item-title mb-3">
+                        <span>ارتباط با صفحات مجازی ما</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-4 mb-sm-0">
+                        <a href="#">
+                            <div class="dv-footer-social-media">
+                                <img src="assets/images/instagram.png" class="img-fluid"
+                                     alt="لینک شبکه های اتجماعی مبل ایده آل">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="dv-footer-social-media mx-4">
+                                <img src="assets/images/Whatsapp.png" class="img-fluid"
+                                     alt="لینک شبکه های اتجماعی مبل ایده آل">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="dv-footer-social-media">
+                                <img src="assets/images/telegeram.png" class="img-fluid"
+                                     alt="لینک شبکه های اتجماعی مبل ایده آل">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <ul class="dv-footer-information-items mb-5">
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="icon-location-light dv-footer-location-icon ms-4"></span>
+                            <span class="dv-footer-location-text">تبریز. چهارراه منصور</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="icon-phone-light dv-footer-location-icon ms-4"></span>
+                            <span class="dv-footer-location-text">04143333333</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="icon-mail-light dv-footer-location-icon ms-4"></span>
+                            <span class="dv-footer-location-text">www.idealmobl.com</span>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-column">
+                        <span class="dv-footer-news-title mb-3">اطلاع از اخرین تخفیفات</span>
+                        <form class="d-flex">
+                            <input class="form-control dv-footer-email-input ms-2" type="email" name="email"
+                                   placeholder="ایمیل خود را وارد کنید"
+                                   aria-label="Search">
+                            <button class="dv-footer-submit-button" type="submit">
+                                <span class="icon-carbonsend-alt-filled"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+<!--footer-->
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/slick.min.js"></script>

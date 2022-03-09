@@ -3,26 +3,133 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>index</title>
+    <title>مبل ایده آل</title>
     <link rel="shortcut icon" href="assets/images/doraaal.ico" type="image/x-icon">
     <!--    Logo with ico format-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/icomoon.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/swiper-custom.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <!--header-->
-<!---->
 <header>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light dv-custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Ideal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav dv-right-menu align-items-xl-center ms-auto pe-0 mb-3 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Sofa" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            مبل
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="Sofa">
+                            <li><a class="dropdown-item" href="#">مبل یک</a></li>
+                            <li><a class="dropdown-item" href="#">مبل دو</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="bedSet" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            سرویس خواب
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="bedSet">
+                            <li><a class="dropdown-item" href="#">سرویس خواب یک</a></li>
+                            <li><a class="dropdown-item" href="#">سرویس خواب دو</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">ارتباط با ما</a>
+                    </li>
+                </ul>
+                <div class="d-flex flex-column flex-sm-row align-items-sm-center">
+                    <form class="d-flex dv-header-form mb-3 mb-sm-0">
+                        <button type="submit">
+                            <span class="icon-Icon---Search"></span>
+                        </button>
+                        <input class="form-control" type="search" name="search" placeholder="جستجو" aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav flex-row align-items-center">
+                        <li class="nav-item dropdown dv-user-dropdown me-3">
+                            <a class="nav-link dropdown-toggle dv-user-image-link" href="#" id="userImage" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/images/user.png" class="img-cover" alt="مبل ایده آل">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="userImage">
+                                <li><a class="dropdown-item" href="#">حساب کاربری</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dv-header-icon ms-4">
+                            <a class="nav-link" href="cart.html">
+                                <span class="icon-Icon---Cart"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item dv-header-icon">
+                            <a class="nav-link" href="interest.html">
+                                <span class="icon-Icon---Heart"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
-
 <!--section-body-->
-
-
 <main>
+    <!-- SwiperBaners -->
+    <section id="index-banner">
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper dv-banner-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/bed5.png" class="img-fluid" loading="lazy" alt="ideal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/bed6.png" class="img-fluid" loading="lazy" alt="ideal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/bed9.png" class="img-fluid" loading="lazy" alt="ideal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/bed5.png" class="img-fluid" loading="lazy" alt="ideal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/bed6.png" class="img-fluid" loading="lazy" alt="ideal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/bed9.png" class="img-fluid" loading="lazy" alt="ideal">
+                        </div>
+                    </div>
+                    <div class="dv-top-swiper-items">
+                        <div class="container position-relative">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
 
-
+                    <div class="dv-top-swiper-button">
+                        <div class="container position-relative">
+                            <a href="products.html" class="dv-show-all-product-button">
+                                <span class="dv-text-all-product ps-3">مشاهده محصولات</span>
+                                <span class="icon-x-large-arrow-left pe-3"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider product(one)-->
     <section class="dv-section-property">
         <div class="container">
             <div class="row">
@@ -66,47 +173,835 @@
             </div>
         </div>
     </section>
-
     <!--Products-->
     <section>
         <div class="container">
             <div class="row">
-                <h3 class="text-center">محصولات</h3>
+                <h2 class="text-center dv-title-product">محصولات</h2>
                 <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card dv-index-card">
-                            <div class="dv-opacity-card">
-                            <img src="assets/images/cooling%20system.png" class="card-img-top img-fluid" alt="ideal">
-                            <div class="card-body dv-body-card">
-                                <a href="">
-                                    <h5 class="card-title">مبل راحتی مدل235</h5>
-                                    <span>مبل راحتی</span>
-                                </a>
-                                <div class="d-flex justify-content-between mt-2">
-                                    <div>
-                                        <span>5.300.000</span>
-                                        <span>تومان</span>
-                                    </div>
-                                    <div>
-                                        <span>5.300.000</span>
-                                        <span>تومان</span>
-                                    </div>
-
+                    <div class="card dv-index-card">
+                        <div class="dv-hover-card">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#!" class="dv-btn-show-product"><span>مشاهده محصول</span></a>
+                                <div class="dv-icon-card">
+                                    <a href="#">
+                                        <span class="icon-share pe-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-heart  ps-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dv-img-card-product">
+                            <img src="assets/images/coolingsystem.png" class="w-100 h-100" alt="ideal">
+                        </div>
+                        <div class="dv-low-discount-percentage text-center"> % 20-</div>
+                        <div class="card-body dv-body-card">
+                            <a href="">
+                                <h5 class="card-title div-product-model fw-bold">مبل راحتی مدل235</h5>
+                                <span class="dv-comfort-sofa">مبل راحتی</span>
+                            </a>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="discounted-price fw-bold">
+                                    <span class="ps-1">5.300.000</span>
+                                    <span>تومان</span>
+                                </div>
+                                <div class="original-price">
+                                    <span class="ps-1"><s>5.300.000</s></span>
+                                    <span><s>تومان</s></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card dv-index-card">
+                        <div class="dv-hover-card">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#!" class="dv-btn-show-product"><span>مشاهده محصول</span></a>
+                                <div class="dv-icon-card">
+                                    <a href="#">
+                                        <span class="icon-share pe-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-heart  ps-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dv-img-card-product">
+                            <img src="assets/images/flower14.png" class="w-100 h-100" alt="ideal">
+                        </div>
+                        <div class="dv-with-higher-discount-percentage text-center"> % 50-</div>
+                        <div class="card-body dv-body-card">
+                            <a href="">
+                                <h5 class="card-title div-product-model fw-bold">مبل راحتی مدل235</h5>
+                                <span class="dv-comfort-sofa">مبل راحتی</span>
+                            </a>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="discounted-price fw-bold">
+                                    <span class="ps-1">5.300.000</span>
+                                    <span>تومان</span>
+                                </div>
+                                <div class="original-price">
+                                    <span class="ps-1"><s>5.300.000</s></span>
+                                    <span><s>تومان</s></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card dv-index-card">
+                        <div class="dv-hover-card">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#!" class="dv-btn-show-product"><span>مشاهده محصول</span></a>
+                                <div class="dv-icon-card">
+                                    <a href="#">
+                                        <span class="icon-share pe-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-heart  ps-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dv-img-card-product">
+                            <img src="assets/images/chair2-min.png" class="w-100 h-100" alt="ideal">
+                        </div>
+                        <div class="dv-with-higher-discount-percentage text-center"> % 50-</div>
+                        <div class="card-body dv-body-card">
+                            <a href="">
+                                <h5 class="card-title div-product-model fw-bold">مبل راحتی مدل235</h5>
+                                <span class="dv-comfort-sofa">مبل راحتی</span>
+                            </a>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="discounted-price fw-bold">
+                                    <span class="ps-1">5.300.000</span>
+                                    <span>تومان</span>
+                                </div>
+                                <div class="original-price">
+                                    <span class="ps-1"><s>5.300.000</s></span>
+                                    <span><s>تومان</s></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card dv-index-card">
+                        <div class="dv-hover-card">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#!" class="dv-btn-show-product"><span>مشاهده محصول</span></a>
+                                <div class="dv-icon-card">
+                                    <a href="#">
+                                        <span class="icon-share pe-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-heart  ps-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dv-img-card-product">
+                            <img src="assets/images/bed8.png" class="w-100 h-100" alt="ideal">
+                        </div>
+                        <div class="dv-with-higher-discount-percentage text-center"> % 50-</div>
+                        <div class="card-body dv-body-card">
+                            <a href="">
+                                <h5 class="card-title div-product-model">مبل راحتی مدل235</h5>
+                                <span class="dv-comfort-sofa">مبل راحتی</span>
+                            </a>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="discounted-price">
+                                    <span class="ps-1">5.300.000</span>
+                                    <span>تومان</span>
+                                </div>
+                                <div class="original-price">
+                                    <span class="ps-1"><s>5.300.000</s></span>
+                                    <span><s>تومان</s></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card dv-index-card">
+                        <div class="dv-hover-card">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#!" class="dv-btn-show-product"><span>مشاهده محصول</span></a>
+                                <div class="dv-icon-card">
+                                    <a href="#">
+                                        <span class="icon-share pe-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-heart  ps-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dv-img-card-product">
+                            <img src="assets/images/flower1-min.png" class="w-100 h-100" alt="ideal">
+                        </div>
+                        <div class="dv-with-higher-discount-percentage text-center"> % 50-</div>
+                        <div class="card-body dv-body-card">
+                            <a href="">
+                                <h5 class="card-title div-product-model">مبل راحتی مدل235</h5>
+                                <span class="dv-comfort-sofa">مبل راحتی</span>
+                            </a>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="discounted-price">
+                                    <span class="ps-1">5.300.000</span>
+                                    <span>تومان</span>
+                                </div>
+                                <div class="original-price">
+                                    <span class="ps-1"><s>5.300.000</s></span>
+                                    <span><s>تومان</s></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card dv-index-card">
+                        <div class="dv-hover-card">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#!" class="dv-btn-show-product"><span>مشاهده محصول</span></a>
+                                <div class="dv-icon-card">
+                                    <a href="#">
+                                        <span class="icon-share pe-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-heart  ps-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dv-img-card-product">
+                            <img src="assets/images/bed1-min.png" class="w-100 h-100" alt="ideal">
+                        </div>
+                        <div class="dv-with-higher-discount-percentage text-center"> % 50-</div>
+                        <div class="card-body dv-body-card">
+                            <a href="">
+                                <h5 class="card-title div-product-model">مبل راحتی مدل235</h5>
+                                <span class="dv-comfort-sofa">مبل راحتی</span>
+                            </a>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="discounted-price">
+                                    <span class="ps-1">5.300.000</span>
+                                    <span>تومان</span>
+                                </div>
+                                <div class="original-price">
+                                    <span class="ps-1"><s>5.300.000</s></span>
+                                    <span><s>تومان</s></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card dv-index-card">
+                        <div class="dv-hover-card">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#!" class="dv-btn-show-product"><span>مشاهده محصول</span></a>
+                                <div class="dv-icon-card">
+                                    <a href="#">
+                                        <span class="icon-share pe-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-heart  ps-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dv-img-card-product">
+                            <img src="assets/images/glass.png" class="w-100 h-100" alt="ideal">
+                        </div>
+                        <div class="dv-with-higher-discount-percentage text-center"> % 50-</div>
+                        <div class="card-body dv-body-card">
+                            <a href="">
+                                <h5 class="card-title div-product-model">مبل راحتی مدل235</h5>
+                                <span class="dv-comfort-sofa">مبل راحتی</span>
+                            </a>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="discounted-price">
+                                    <span class="ps-1">5.300.000</span>
+                                    <span>تومان</span>
+                                </div>
+                                <div class="original-price">
+                                    <span class="ps-1"><s>5.300.000</s></span>
+                                    <span><s>تومان</s></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card dv-index-card">
+                        <div class="dv-hover-card">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#!" class="dv-btn-show-product"><span>مشاهده محصول</span></a>
+                                <div class="dv-icon-card">
+                                    <a href="#">
+                                        <span class="icon-share pe-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-heart  ps-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dv-img-card-product">
+                            <img src="assets/images/base-light.png" class="w-100 h-100" alt="ideal">
+                        </div>
+                        <div class="dv-with-higher-discount-percentage text-center"> % 50-</div>
+                        <div class="card-body dv-body-card">
+                            <a href="">
+                                <h5 class="card-title div-product-model">مبل راحتی مدل235</h5>
+                                <span class="dv-comfort-sofa">مبل راحتی</span>
+                            </a>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="discounted-price">
+                                    <span class="ps-1">5.300.000</span>
+                                    <span>تومان</span>
+                                </div>
+                                <div class="original-price">
+                                    <span class="ps-1"><s>5.300.000</s></span>
+                                    <span><s>تومان</s></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center dv-view-all-products">
+                    <a href="products.html">مشاهده تمامی محصولات</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Best-selling-products-->
+    <section id="bestSellingpRoducts">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <h2 class="dv-title-product mt-5">
+                        محصولات پرفروش
+                    </h2>
+                </div>
+                <div class="col-12 d-flex justify-content-center text-center">
+                    <ul class="nav nav-pills mb-3  dv-tab-best-selling-products" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="office-products-tab" data-bs-toggle="pill"
+                                    data-bs-target="#office-products" type="button" role="tab"
+                                    aria-controls="office-products" aria-selected="true">اداری
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="flat-products-tab" data-bs-toggle="pill"
+                                    data-bs-target="#flat-products" type="button" role="tab"
+                                    aria-controls="flat-products"
+                                    aria-selected="false">تخت
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sofa-products-tab" data-bs-toggle="pill"
+                                    data-bs-target="#sofa-products" type="button" role="tab"
+                                    aria-controls="sofa-products"
+                                    aria-selected="false">مبل
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="led-products-tab" data-bs-toggle="pill"
+                                    data-bs-target="#led-products" type="button" role="tab" aria-controls="led-products"
+                                    aria-selected="false">چراغ
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="office-products" role="tabpanel"
+                         aria-labelledby="office-products-tab">
+                        <!-- Swiper -->
+                        <div class="swiper dv-slider-best-selling-products">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="dv-img-best-selling-products">
+                                            <img src="assets/images/chair4-min.png" class="card-img-top img-fluid"
+                                                 alt="ideal" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="#" class="d-flex justify-content-end flex-column text-end">
+                                                <span class="dv-product-type">مبل اداری </span>
+                                                <h5 class="dv-model-best-selling-products mt-1">مبل اداری مدل 45</h5>
+                                            </a>
+                                            <div class="d-flex justify-content-start">
+                                                <div class="dv-checked-product">
+                                                    <span class="icon-Star checked"></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star"></span>
+                                                    <span class="icon-Star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                                            <span class="best-selling-products ">
+                                                <span>5.300.000</span>
+                                                <span class="ps-2">تومان</span>
+                                            </span>
+                                                <a href="#" class="dv-add-product">
+                                                    <span class="icon-plus dv-icon-plus"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="dv-img-best-selling-products">
+                                            <img src="assets/images/chair1-min.png" class="card-img-top img-fluid"
+                                                 alt="ideal" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="#" class="d-flex justify-content-end flex-column text-end">
+                                                <span class="dv-product-type">مبل اداری </span>
+                                                <h5 class="dv-model-best-selling-products mt-1">مبل اداری مدل 45</h5>
+                                            </a>
+                                            <div class="d-flex justify-content-start">
+                                                <div class="dv-checked-product">
+                                                    <span class="icon-Star checked"></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star"></span>
+                                                    <span class="icon-Star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                                            <span class="best-selling-products ">
+                                                <span>5.300.000</span>
+                                                <span class="ps-2">تومان</span>
+                                            </span>
+                                                <a href="#" class="dv-add-product">
+                                                    <span class="icon-plus dv-icon-plus"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="dv-img-best-selling-products">
+                                            <img src="assets/images/chair5-min.png" class="card-img-top img-fluid"
+                                                 alt="ideal" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="#" class="d-flex justify-content-end flex-column text-end">
+                                                <span class="dv-product-type">مبل اداری </span>
+                                                <h5 class="dv-model-best-selling-products mt-1">مبل اداری مدل 45</h5>
+                                            </a>
+                                            <div class="d-flex justify-content-start">
+                                                <div class="dv-checked-product">
+                                                    <span class="icon-Star checked"></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star"></span>
+                                                    <span class="icon-Star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                                            <span class="best-selling-products ">
+                                                <span>5.300.000</span>
+                                                <span class="ps-2">تومان</span>
+                                            </span>
+                                                <a href="#" class="dv-add-product">
+                                                    <span class="icon-plus dv-icon-plus"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="dv-img-best-selling-products">
+                                            <img src="assets/images/chair6-min.png" class="card-img-top img-fluid"
+                                                 alt="ideal" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="#" class="d-flex justify-content-end flex-column text-end">
+                                                <span class="dv-product-type">مبل اداری </span>
+                                                <h5 class="dv-model-best-selling-products mt-1">مبل اداری مدل 45</h5>
+                                            </a>
+                                            <div class="d-flex justify-content-start">
+                                                <div class="dv-checked-product">
+                                                    <span class="icon-Star checked"></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star"></span>
+                                                    <span class="icon-Star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                                            <span class="best-selling-products ">
+                                                <span>5.300.000</span>
+                                                <span class="ps-2">تومان</span>
+                                            </span>
+                                                <a href="#" class="dv-add-product">
+                                                    <span class="icon-plus dv-icon-plus"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="dv-img-best-selling-products">
+                                            <img src="assets/images/chair1-min.png" class="card-img-top img-fluid"
+                                                 alt="ideal" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="#" class="d-flex justify-content-end flex-column text-end">
+                                                <span class="dv-product-type">مبل اداری </span>
+                                                <h5 class="dv-model-best-selling-products mt-1">مبل اداری مدل 45</h5>
+                                            </a>
+                                            <div class="d-flex justify-content-start">
+                                                <div class="dv-checked-product">
+                                                    <span class="icon-Star checked"></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star "></span>
+                                                    <span class="icon-Star"></span>
+                                                    <span class="icon-Star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+                                            <span class="best-selling-products ">
+                                                <span>5.300.000</span>
+                                                <span class="ps-2">تومان</span>
+                                            </span>
+                                                <a href="#" class="dv-add-product">
+                                                    <span class="icon-plus dv-icon-plus"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="flat-products" role="tabpanel" aria-labelledby="flat-products-tab">2
+                    </div>
+                    <div class="tab-pane fade" id="sofa-products" role="tabpanel" aria-labelledby="sofa-products-tab">3
+                    </div>
+                    <div class="tab-pane fade" id="led-products" role="tabpanel" aria-labelledby="led-products-tab">4
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="products.html" class="dv-show-all-product">
+                        <span class="dv-text-all-product ps-3">مشاهده همه</span>
+                        <span class="icon-x-large-arrow-left pe-3"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--News PRODUCT-->
+    <section id="NewsProduct">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <div class="dv-news">اخبار</div>
+                </div>
+                <div class="swiper dv-slider-news-products">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card dv-hover-card-news-product">
+                                <img src="assets/images/img-news1.png" class="card-img-top" alt="ideal" loading="lazy">
+                                <div class="card-body">
+
+                                    <p class="card-text dv-p-slider-news-products dv-three-dot-for-description">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <span class="dv-date-news-card">
+                                            <span>اسفند</span>
+                                            <span class="mx-1">10</span>
+                                            <span>1400</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card dv-hover-card-news-product">
+                                <img src="assets/images/img-news2.png" class="card-img-top" alt="ideal" loading="lazy">
+                                <div class="card-body">
+
+                                    <p class="card-text dv-p-slider-news-products dv-three-dot-for-description">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <span class="dv-date-news-card">
+                                            <span>اسفند</span>
+                                            <span class="mx-1">10</span>
+                                            <span>1400</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card dv-hover-card-news-product">
+                                <img src="assets/images/img-news3.png" class="card-img-top" alt="ideal" loading="lazy">
+                                <div class="card-body">
+
+                                    <p class="card-text dv-p-slider-news-products dv-three-dot-for-description">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <span class="dv-date-news-card">
+                                            <span>اسفند</span>
+                                            <span class="mx-1">10</span>
+                                            <span>1400</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card dv-hover-card-news-product">
+                                <img src="assets/images/img-news1.png" class="card-img-top" alt="ideal" loading="lazy">
+                                <div class="card-body">
+
+                                    <p class="card-text dv-p-slider-news-products dv-three-dot-for-description">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <span class="dv-date-news-card">
+                                            <span>اسفند</span>
+                                            <span class="mx-1">10</span>
+                                            <span>1400</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card dv-hover-card-news-product">
+                                <img src="assets/images/img-news2.png" class="card-img-top" alt="ideal" loading="lazy">
+                                <div class="card-body">
+
+                                    <p class="card-text dv-p-slider-news-products dv-three-dot-for-description">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <span class="dv-date-news-card">
+                                            <span>اسفند</span>
+                                            <span class="mx-1">10</span>
+                                            <span>1400</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card dv-hover-card-news-product">
+                                <img src="assets/images/img-news3.png" class="card-img-top" alt="ideal" loading="lazy">
+                                <div class="card-body">
+
+                                    <p class="card-text dv-p-slider-news-products dv-three-dot-for-description">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است
+                                    </p>
+                                    <div class="d-flex justify-content-end">
+                                        <span class="dv-date-news-card">
+                                            <span>اسفند</span>
+                                            <span class="mx-1">10</span>
+                                            <span>1400</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Shared-photos-Idealmobl-->
+    <section id="Shared_photos_Idealmobl">
+        <div class="">
+            <div class="row">
+                <div class="d-flex justify-content-center pt-4">
+                    <span class="dv-text-Shared-photos">عکس های چیدمان خود را با ما به اشتراک بگذارید</span>
+                </div>
+
+                <div class="col-12 ">
+                    <div class="dv-images-masonry py-5">
+                        <div class="masonry ">
+                            <div class="item">
+                                <img src="assets/images/flower15.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/bed4-min.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/flower7-min.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/flower3-min.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/flower16.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/bed4-min.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/flower7-min.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/flower3-min.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/flower16.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/bed8.png" class="img-fluid" alt="ideal" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 </main>
 
-<!--section-footer-->
+<!--footer-->
 <footer id="footer">
+    <div class="container mt-3">
+        <div class="dv-footer-content pb-5">
+            <div class="row g-4 mt-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex justify-content-between">
+                        <ul class="dv-footer-links-list">
+                            <li class="dv-footer-links-list-item-title mb-3">
+                                <a href="index.html">
+                                    <span class="fw-bold">Ideal</span>
+                                </a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">محصولات</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">تخفیفات</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">مبلمان</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">سرویس خواب</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">دکوراتیو</a>
+                            </li>
+                        </ul>
+                        <ul class="dv-footer-links-list">
+                            <li class="dv-footer-links-list-item-title mb-3">
+                                <span>لینک های مهم</span>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">تماس با ما</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">درباره ما</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">سبد خرید</a>
+                            </li>
+                            <li class="dv-footer-links-list-item mb-3">
+                                <a class="dv-footer-links-list-link" target="_blank" href="#">وبلاگ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex flex-column align-items-center">
+                    <div class="dv-footer-links-list-item-title mb-3">
+                        <span>ارتباط با صفحات مجازی ما</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-4 mb-sm-0">
+                        <a href="#">
+                            <div class="dv-footer-social-media">
+                                <img src="assets/images/instagram.png" class="img-fluid"
+                                     alt="لینک شبکه های اتجماعی مبل ایده آل">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="dv-footer-social-media mx-4">
+                                <img src="assets/images/Whatsapp.png" class="img-fluid"
+                                     alt="لینک شبکه های اتجماعی مبل ایده آل">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="dv-footer-social-media">
+                                <img src="assets/images/telegeram.png" class="img-fluid"
+                                     alt="لینک شبکه های اتجماعی مبل ایده آل">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <ul class="dv-footer-information-items mb-5">
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="icon-location-light dv-footer-location-icon ms-4"></span>
+                            <span class="dv-footer-location-text">تبریز. چهارراه منصور</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="icon-phone-light dv-footer-location-icon ms-4"></span>
+                            <span class="dv-footer-location-text">04143333333</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="icon-mail-light dv-footer-location-icon ms-4"></span>
+                            <span class="dv-footer-location-text">www.idealmobl.com</span>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-column">
+                        <span class="dv-footer-news-title mb-3">اطلاع از اخرین تخفیفات</span>
+                        <form class="d-flex">
+                            <input class="form-control dv-footer-email-input ms-2" type="email" name="email"
+                                   placeholder="ایمیل خود را وارد کنید"
+                                   aria-label="Search">
+                            <button class="dv-footer-submit-button" type="submit">
+                                <span class="icon-carbonsend-alt-filled"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
-<script src="assets/js/jquery.min.js"></script>
+
+<!--scripts-->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/swiper.js"></script>
 <script src="assets/js/index.js"></script>
 
 </body>
