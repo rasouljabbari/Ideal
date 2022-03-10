@@ -59,7 +59,7 @@ let swiperCard = new Swiper(".dv-slider-best-selling-products", {
             slidesPerView: 4,
             spaceBetween: 30,
         },
-        1860: {
+        1700: {
             slidesPerView: 5,
             spaceBetween: 30,
         },

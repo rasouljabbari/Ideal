@@ -35,7 +35,9 @@
 .swiper-slide {
     width: 60%;
 }
-
+.dv-slider-best-selling-products .swiper-slide {
+    background: transparent;
+}
 /*custom slider banner*/
 .dv-banner-swiper {
     position: relative;
