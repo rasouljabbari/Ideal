@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/icomoon.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
-    <link rel="stylesheet" href="assets/css/dv-style.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -94,29 +93,65 @@
             </div>
             <div class="d-flex justify-content-between flex-wrap">
                 <span class="dv-product"><span class="ps-3">1600</span> محصول</span>
-                <button type="button" class="btn dv-Product-filters d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#filterModal">
+                <button type="button" class="btn dv-Product-filters d-flex align-items-center justify-content-center"
+                        data-bs-toggle="modal" data-bs-target="#filterModal">
                     <span class="icon-filter ps-3"></span>
                     <span>فیلتر محصولات</span>
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade dv-modal-product-filters" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+                <div class="modal fade dv-modal-product-filters" id="filterModal" tabindex="-1"
+                     aria-labelledby="filterModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-3">dss</div>
-                                        <div class="col-12 col-lg-3">dsd</div>
-                                        <div class="col-12 col-lg-3">d</div>
-                                        <div class="col-12 col-lg-3">d</div>
+                        <form class="modal-content">
+                            <div class="modal-body p-4 p-lg-5">
+                                <div class="row g-3 position-relative">
+                                    <div class="col-md-6 col-xl-3">
+                                        <label class="w-100 d-flex flex-column" for="category">
+                                            <span class="dv-cart-from-label-span">دسته بندی</span>
+                                            <select name="category" id="category"
+                                                    class="dv-cart-form-label-input dv-bg-gray-filter-input">
+                                                <option disabled selected>انتخاب کنید</option>
+                                                <option value="مبل راحتی">مبل راحتی</option>
+                                                <option value="مبل سخت">مبل سخت</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6 col-xl-3">
+                                        <label class="w-100 d-flex flex-column" for="color">
+                                            <span class="dv-cart-from-label-span">رنگ</span>
+                                            <select name="color" id="color"
+                                                    class="dv-cart-form-label-input dv-bg-gray-filter-input">
+                                                <option disabled selected>انتخاب کنید</option>
+                                                <option value="سبز">سبز</option>
+                                                <option value="سفید">سفید</option>
+                                                <option value="قرمز">قرمز</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6 col-xl-3">
+                                        <label class="w-100 d-flex flex-column" for="price_from">
+                                            <span class="dv-cart-from-label-span">قیمت (از) (ریال)</span>
+                                            <input id="price_from" type="number" name="price_from" class="dv-cart-form-label-input dv-bg-gray-filter-input text-start"
+                                                   placeholder="10000">
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6 col-xl-3">
+                                        <label class="w-100 d-flex flex-column" for="price_to">
+                                            <span class="dv-cart-from-label-span">قیمت (تا) (ریال)</span>
+                                            <input id="price_to" type="number" name="price_to"
+                                                   class="dv-cart-form-label-input dv-bg-gray-filter-input text-start"
+                                                   placeholder="25000000">
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" data-bs-dismiss="modal" class="btn dv-Product-filters w-100">فیلتر</button>
+                            <div class="modal-footer border-0 p-4 p-lg-5">
+                                <button type="submit" data-bs-dismiss="modal" class="btn dv-Product-filters w-100">
+                                    فیلتر
+                                </button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
 
@@ -485,7 +520,6 @@
 </main>
 
 <!--section-footer-->
-<!--section-footer-->
 <footer id="footer">
     <div class="container mt-3">
         <div class="dv-footer-content pb-5">
@@ -595,7 +629,7 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/swiper.js"></script>
 <script src="assets/js/index.js"></script>
 
 </body>

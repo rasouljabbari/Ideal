@@ -8,8 +8,8 @@
     <!--    Logo with ico format-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/icomoon.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/dv-style.css">
 </head>
 <body>
 
@@ -335,7 +335,20 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
 <script src="assets/js/index.js"></script>
+
+<script>
+    $(".province-select").select2({
+        placeholder: "استان محل سکونت خود را انتخاب کنید",
+        allowClear: true
+    });
+
+    $(".city-select").select2({
+        placeholder: "شهر محل سکونت خود را انتخاب کنید",
+        allowClear: true
+    });
+</script>
 
 </body>
 </html>
