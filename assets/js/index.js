@@ -11,11 +11,18 @@ $(document).ready(function () {
 
 //slider product INDEX(one)
 let swiper = new Swiper(".dv-banner-swiper", {
-    slidesPerView: "auto",
+    slidesPerView: 1,
     centeredSlides: true,
     spaceBetween: 30,
     autoplay: true,
-    // loop: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1280: {
+            slidesPerView: "auto",
+        },
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -28,17 +35,13 @@ let swiper = new Swiper(".dv-banner-swiper", {
 
 ////////////////////////////////
 let swiperCard = new Swiper(".dv-slider-best-selling-products", {
-    // navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    // },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-    // autoplay : true,
+    autoplay : true,
     slidesPerView: 1,
-    spaceBetween: 5,
+    spaceBetween: 4,
     breakpoints: {
         577: {
             slidesPerView: 2,
@@ -58,7 +61,7 @@ let swiperCard = new Swiper(".dv-slider-best-selling-products", {
         },
         1860: {
             slidesPerView: 5,
-            spaceBetween: 40,
+            spaceBetween: 30,
         },
     },
 });
@@ -91,7 +94,7 @@ let news_product = new Swiper(".dv-slider-news-products", {
         },
         1280: {
             slidesPerView: 3,
-            spaceBetween: 15,
+            spaceBetween: 30,
         },
         1860: {
             slidesPerView: 4,

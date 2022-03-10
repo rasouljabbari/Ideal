@@ -94,10 +94,32 @@
             </div>
             <div class="d-flex justify-content-between flex-wrap">
                 <span class="dv-product"><span class="ps-3">1600</span> محصول</span>
-                <button class="btn dv-Product-filters">
-                    <span>i</span>
+                <button type="button" class="btn dv-Product-filters d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#filterModal">
+                    <span class="icon-filter ps-3"></span>
                     <span>فیلتر محصولات</span>
                 </button>
+
+                <!-- Modal -->
+                <div class="modal fade dv-modal-product-filters" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-3">dss</div>
+                                        <div class="col-12 col-lg-3">dsd</div>
+                                        <div class="col-12 col-lg-3">d</div>
+                                        <div class="col-12 col-lg-3">d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-bs-dismiss="modal" class="btn dv-Product-filters w-100">فیلتر</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
